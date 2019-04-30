@@ -185,7 +185,14 @@
             <artifactId >javax.mail </artifactId >
             <version >1.5.4 </version >
         </dependency >
-	
+	<!-- solrj -->
+<!-- https://mvnrepository.com/artifact/org.apache.solr/solr-solrj -->
+<dependency>
+    <groupId>org.apache.solr</groupId>
+    <artifactId>solr-solrj</artifactId>
+    <version>4.10.2</version>
+</dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -197,7 +204,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-    
+    		
         
         </dependencies>
         

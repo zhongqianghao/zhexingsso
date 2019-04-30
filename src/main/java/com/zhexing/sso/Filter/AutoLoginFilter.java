@@ -17,7 +17,7 @@ public class AutoLoginFilter implements HandlerInterceptor {
 	@Override
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
-		Jedis jedis=new Jedis("192.168.1.126", 6379);
+		Jedis jedis=new Jedis("192.168.134.128", 6379);
 		String token=request.getParameter("token");
 		String IsLogin=jedis.get("REDIS_USER_SESSION_KEY:"+token);
 		
